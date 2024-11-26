@@ -1,0 +1,4 @@
+pinecone-client
+openai==0.28
+openai[datalib]
+streamlit
