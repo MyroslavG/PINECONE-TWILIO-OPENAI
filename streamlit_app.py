@@ -4,8 +4,8 @@ import xml.etree.ElementTree as ET
 from pinecone import Pinecone, Index, ServerlessSpec
 import streamlit as st
 
-pinecone_api_key = 'xxx'
-openai.api_key = 'xxx'
+pinecone_api_key = st.secrets["PINECONE_API_KEY"]
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 pinecone_index_name = 'cvs'
 pc = Pinecone(api_key=pinecone_api_key)
